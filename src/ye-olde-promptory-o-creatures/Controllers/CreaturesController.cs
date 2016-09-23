@@ -10,10 +10,8 @@ namespace ye_olde_promptory_o_creatures.Controllers
     {
         public ActionResult Detail()
         {
-            return new ContentResult()
-            {
-                Content = "Hello from the creatures"
-            };
+            return View();
+           
         }
     }
 }
