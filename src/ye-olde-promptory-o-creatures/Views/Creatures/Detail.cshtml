@@ -1,21 +1,12 @@
 ﻿@{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Ye Ole Prompt'ry O' Creatures";
 
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-<body>
-    <div>
-        <h1>Prompt'ry Ole Creatures</h1>
-        <h3>@ViewBag.CreatureName</h3>
-        <h5>Location: @ViewBag.Location</h5>
-        <p>@ViewBag.Description</p>
-    </div>
-</body>
-</html>
+<h1>Ye Ole Prompt'ry O' Creatures</h1>
+<h3>@ViewBag.CreatureName</h3>
+<h5>Location: @ViewBag.Location</h5>
+<p>@ViewBag.Description</p>
+ 
