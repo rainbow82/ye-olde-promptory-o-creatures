@@ -12,5 +12,6 @@ namespace ye_olde_promptory_o_creatures.Models
         public string Location { get; set; }
         public string Description { get; set; }
 
+
     }
 }
