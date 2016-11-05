@@ -11,18 +11,19 @@
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+        <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Creatures Gallery", "Index", "Creatures", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Creatures", "Index", "Creatures", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Add menu items here -->
+                <ul class="nav navbar-nav navbar-right">
+                   <!-- <li>Creatures</li>
+                    <li>Events</li>-->
                 </ul>
             </div>
         </div>
@@ -31,20 +32,21 @@
     @if (ViewBag.ShowBackBar != null && ViewBag.ShowBackBar)
     {
         <div class="backbar">
-            <div class="container">
+            <div class="container-fluid">
                 @Html.ActionLink("Return To List", "Index", null,
                     new {@class = "btn btn-default" });
             </div>
         </div>
     }
   
-    <div class="container body-content">
+    
+      
         @RenderBody()
-        <hr />
+      
         <footer>
-            <p>&copy; @DateTime.Now.Year - Prompt'ry O' Creatures</p>
+            <!--<p>&copy; @DateTime.Now.Year - Prompt'ry O' Creatures</p>-->
         </footer>
-    </div>
+ 
 
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>

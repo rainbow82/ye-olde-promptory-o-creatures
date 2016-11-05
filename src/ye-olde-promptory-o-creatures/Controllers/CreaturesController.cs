@@ -7,7 +7,7 @@ using ye_olde_promptory_o_creatures.Models;
 
 namespace ye_olde_promptory_o_creatures.Controllers
 {
-    public class CreaturesController :Controller
+    public class CreaturesController : Controller
     {
         public ActionResult Detail()
         {
@@ -15,14 +15,17 @@ namespace ye_olde_promptory_o_creatures.Controllers
             {
                 CreatureName = "Dragon",
                 Location = "World Wide",
-                Description = "A huge neck runs down from its head and into a narrow body. The top is covered in rounded scales and a row of small fan-like growths runs down its spine. \n " +
-        "Its bottom is covered in coarse skin and is colored much lighter than the rest of its body. \n " +
-        "Four long limbs carry its body and allow the creature to stand towering and noble. Each limb has 6 digits, each of which end in thick nails seemingly made of obsidian. "
+                Description = "Lorem ipsum dolor sit amet consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             };
           
-
             return View(creatures);
            
+        }
+
+        public ActionResult RegistrationForm()
+        {
+           
+            return View();
         }
     }
 }

@@ -94,6 +94,7 @@
     <Content Include="Fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Images\background_home.jpg" />
+    <Content Include="Images\BigFoot\bigFootCon.jpg" />
     <Content Include="Images\Dragons\greenDragon.jpg" />
     <Content Include="Images\Dragons\purpleDragon.jpg" />
     <Content Include="Images\Dragons\tinyDragon.jpg" />
@@ -122,6 +123,9 @@
     <Content Include="Fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Creatures\Index.cshtml" />
+    <Content Include="Views\Creatures\RegistrationForm.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
