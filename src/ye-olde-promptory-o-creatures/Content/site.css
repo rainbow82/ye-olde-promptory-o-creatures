@@ -1,85 +1,12 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    margin-top: 1em;
     padding-left: 15px;
     padding-right: 15px;
-}
-
-.navbar-inverse {
-    background-color: lightseagreen;
-}
-
-.navbar-inverse .navbar-brand {
-    color: white;
-}
-
-.navbar ul li {
-    margin: 1em .8em;
-}
-
-h1 {
-    font-family: 'UnifrakturCook', cursive;
-    color: mediumpurple;
-    font-size: 5em;
-}
-
-h3 {
-    margin-top: 2em;
-}
-
-.page-header {
-    padding-bottom: 9px;
-    margin: 1.5em 0 20px;
-    border-bottom: none;
-}
-
-.col-xs-2 img {
-    height: 5%;
-    width: 5%;
-}
-
-.home {
-    background-image:url("../Images/background_home.jpg")
-}
-
-.col-md-4 img {
-     margin-top: 90px;
-}
-
-/*Well styles*/
-.spacer {
-    background-color: white;
-    border: none;
-}
-
-/*Jumbotron styles*/
-.dragon {
-    background-color: #9C09D6;
-}
-.fairy {
-    background-color: #3DC906; 
-}
-
-
-.jumbotron p {
-    margin-bottom: 15px;
-    font-size: 16px;
-    font-weight: 200;
-}
-
-.announcements {
-    background-color: black;
-    color: white;
-}
-
-.btn-success {
-    margin-top: 25px;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
@@ -92,7 +19,7 @@ textarea {
 /* Backbar Styles */
 .backbar{
   width: 100%;
-  background-color: lightsteelblue;
+  background-color: #555;
   margin-top: -10px;
   height: 45px;
 }
@@ -114,18 +41,4 @@ textarea {
 
 .series-list li:last-child{
   border: none;
-}
-
-@media(max-width: 400px) {
-    h1 {
-        font-size: 75%;
-    }
-
-}
-
-@media screen and (min-width: 768px) {
-    .jumbotron {
-        padding-top: 1em; 
-        padding-bottom: 48px;
-    }
 }
