@@ -25,8 +25,7 @@ namespace ye_olde_promptory_o_creatures.Models
         {
             get
             {
-                return CreatureType.Replace(" ", "-")
-                    .ToLower() + "-" + CreatureName + ".jpg";
+                return CreatureType.ToLower() + "-" + CreatureName.ToLower() + ".jpg";
             }
         }
 
