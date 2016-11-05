@@ -4,8 +4,8 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = Model.DisplayText;
 
-    
-        
+
+
 }
 
 <!--<div class="page-header">
@@ -20,14 +20,27 @@
     </ul>
 </div>-->
 
+<h2>@Model.DisplayText</h2>
 
-       <h1>@Model.CreatureName</h1>
-        <h2>Creature Type:</h2>
-        <h3>@Model.CreatureType</h3>
-        <h2>Found:</h2>
-       <h3>@Model.Location</h3>
-       <h2>Description</h2>
-       <p>@Model.Description</p>
+<div class="row">
+    <div class="col-md-6">
+        <div class="well">
+            <h5><label>Creature Name:</label> @Model.CreatureName</h5>
+            <h5><label>Creature Type: </label> @Model.CreatureType</h5>
+            <h5><label>Found:</label> @Model.Location</h5>
+       
+        </div>
+        <h5>Description</h5>
+        <p>@Model.Description</p>
+    </div>
+    <div class="col-md-6">
+        <img src="/Images/@Model.ImageFileName"
+             alt="@Model.DisplayText" class="img-responsive" />
+    </div>
+</div>
+
+
+
 
 
 
