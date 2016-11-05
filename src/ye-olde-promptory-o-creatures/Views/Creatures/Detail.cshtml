@@ -2,7 +2,7 @@
 
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
-    ViewBag.Title = "Ye Ole Prompt'ry O' Creatures";
+    ViewBag.Title = Model.DisplayText;
 
     
         
@@ -21,10 +21,13 @@
 </div>-->
 
 
-       <h1>@ViewBag.CreatureName</h1>
-       <h2>@ViewBag.Location</h2>
+       <h1>@Model.CreatureName</h1>
+        <h2>Creature Type:</h2>
+        <h3>@Model.CreatureType</h3>
+        <h2>Found:</h2>
+       <h3>@Model.Location</h3>
        <h2>Description</h2>
-       <p>@ViewBag.Description</p>
+       <p>@Model.Description</p>
 
 
 
