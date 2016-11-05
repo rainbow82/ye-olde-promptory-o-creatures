@@ -4,9 +4,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Ye Ole Prompt'ry O' Creatures";
 
-    var creatureName = "Dragon";
-    var location = "World Wide";
-    var description = "jfioe a;dkfoief ;a dofisof;ai gjidaoiejr;a; ido ";
+    
         
 }
 
@@ -23,10 +21,10 @@
 </div>-->
 
    <div>
-       <h1>@creatureName</h1>
-       <h2>@location</h2>
+       <h1>@ViewBag.CreatureName</h1>
+       <h2>@ViewBag.Location</h2>
        <h2>Description</h2>
-       <p>@description</p>
+       <p>@ViewBag.Description</p>
 
    </div>
 
