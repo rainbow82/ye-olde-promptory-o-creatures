@@ -96,11 +96,11 @@
     <Content Include="Images\background_home.jpg" />
     <Content Include="Images\BigFoot\bigFootCon.jpg" />
     <Content Include="Images\Dragons\greenDragon.jpg" />
-    <Content Include="Images\Dragons\purpleDragon.jpg" />
+    <Content Include="Images\Dragons\creature-dragon.jpg" />
     <Content Include="Images\Dragons\tinyDragon.jpg" />
     <Content Include="Images\Fairies\greenFairy.jpg" />
     <Content Include="Images\Fairies\orangeFairy.jpg" />
-    <Content Include="Images\Fairies\snowFairy.jpg" />
+    <Content Include="Images\Fairies\creature-snowfairy.jpg" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\npm.js" />
     <Content Include="Web.config" />
