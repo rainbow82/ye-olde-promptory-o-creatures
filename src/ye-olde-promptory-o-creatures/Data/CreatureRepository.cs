@@ -12,6 +12,7 @@ namespace ye_olde_promptory_o_creatures.Data
         {
             new Creatures()
             {
+                Id = 1,
                 CreatureType = "Winged",
                 CreatureName = "Dragon",
                 Location = "World Wide",
@@ -20,6 +21,7 @@ namespace ye_olde_promptory_o_creatures.Data
 
             new Creatures()
             {
+                Id = 2,
                 CreatureType = "Winged",
                 CreatureName = "Fairy",
                 Location = "World Wide",
@@ -28,6 +30,7 @@ namespace ye_olde_promptory_o_creatures.Data
 
             new Creatures()
             {
+                Id = 3,
                 CreatureType = "Mountainous",
                 CreatureName = "BigFoot",
                 Location = "World Wide",
