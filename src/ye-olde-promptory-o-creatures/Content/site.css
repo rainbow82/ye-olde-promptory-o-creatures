@@ -42,3 +42,15 @@ textarea {
 .series-list li:last-child{
   border: none;
 }
+
+.jumbotron {
+    background-color: black;
+}
+
+.jumbotron .conf-announcement {
+    color: white;
+}
+
+.jumbotron .conf-address {
+    color: lightgray;
+}
