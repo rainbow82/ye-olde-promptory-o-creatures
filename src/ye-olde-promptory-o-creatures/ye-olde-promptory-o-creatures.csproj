@@ -100,7 +100,7 @@
     <Content Include="Images\Dragons\tinyDragon.jpg" />
     <Content Include="Images\Fairies\greenFairy.jpg" />
     <Content Include="Images\Fairies\orangeFairy.jpg" />
-    <Content Include="Images\winged-snowfairy.jpg" />
+    <Content Include="Images\winged-fairy.jpg" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\npm.js" />
     <Content Include="Web.config" />

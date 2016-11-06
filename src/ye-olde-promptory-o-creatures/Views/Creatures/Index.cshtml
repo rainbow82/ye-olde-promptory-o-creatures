@@ -1,7 +1,20 @@
-﻿
+﻿@model ye_olde_promptory_o_creatures.Models.Creatures[]
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Creatures";
 }
 
-<h2>Index</h2>
+<h2>@ViewBag.Title</h2>
+
+<div class="row">
+    @foreach (var creature in Model)
+    {
+        <div class="col-md-3">
+            <h4>@creature.DisplayText</h4>
+            <img src="/Images/@creature.ImageFileName"
+                 alt="@creature.DisplayText"
+                 class="img-responsive" />
+        </div>
+    }
+    
+</div>
 
