@@ -43,6 +43,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -96,6 +104,7 @@
     <Content Include="Images\background_home.jpg" />
     <Content Include="Images\BigFoot\bigFootCon.jpg" />
     <Content Include="Images\Dragons\greenDragon.jpg" />
+    <Content Include="Images\mountainous-bigfoot.jpg" />
     <Content Include="Images\winged-dragon.jpg" />
     <Content Include="Images\Dragons\tinyDragon.jpg" />
     <Content Include="Images\Fairies\greenFairy.jpg" />
@@ -112,6 +121,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Conferences.cs" />
     <Compile Include="Models\Creatures.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -127,6 +137,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Creatures\RegistrationForm.cshtml" />
     <Content Include="Views\Creatures\Index.cshtml" />
+    <Content Include="Views\Creatures\Upcoming.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data.Entity;
 
 namespace ye_olde_promptory_o_creatures.Models
 {
@@ -33,4 +34,6 @@ namespace ye_olde_promptory_o_creatures.Models
     }//end class
 
    
-}
+
+
+}//end namespace

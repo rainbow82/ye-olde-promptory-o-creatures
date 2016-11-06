@@ -3,7 +3,6 @@
     ViewBag.Title = "Creatures";
 }
 
-<h2>@ViewBag.Title</h2>
 
 <div class="jumbotron announcements">
     <div class="row">
@@ -15,24 +14,29 @@
         <div class="col-md-6 col-md-push-1">
             <img src="~/Images/BigFoot/bigFootCon.jpg" /><br />
             <div class="btn btn-success"> @Html.ActionLink("Register Today", "RegistrationForm")</div>
+            <div class="btn btn-success"> @Html.ActionLink("Upcoming Conferences", "Upcoming")</div>
         </div>
     </div>
 </div>
 
-<div class="row">
-    @foreach (var creature in Model)
-    {
-        <div class="col-md-4 col-md-push-1">
-            <!--Link text, action name to route to, anonymous types-->
-            <h4>@Html.ActionLink(creature.DisplayText, "Detail",
-               new { id = creature.Id})</h4>
+<div class="container-fluid">
+    <div class="row">
+        @foreach (var creature in Model)
+        {
+            <div class="col-md-4">
+                <!--Link text, action name to route to, anonymous types-->
+                <h4>
+                    @Html.ActionLink(creature.DisplayText, "Detail",
+                   new { id = creature.Id })
+            </h4>
             <a href="@Url.Action("Detail", new { id = creature.Id })">
                 <img src="/Images/@creature.ImageFileName"
                      alt="@creature.DisplayText"
                      class="img-responsive" />
             </a>
         </div>
-    }
-    
+        }
+
+    </div>
 </div>
 
