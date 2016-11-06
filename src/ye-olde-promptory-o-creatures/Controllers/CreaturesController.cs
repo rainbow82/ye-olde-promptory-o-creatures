@@ -17,6 +17,15 @@ namespace ye_olde_promptory_o_creatures.Controllers
             _creatureRepository = new CreatureRepository();
         }
 
+        //display home page
+        public ActionResult Index()
+        {
+            var creatures = _creatureRepository.GetCreatures();
+
+            return View(creatures);
+        }
+
+        //display detail page
         public ActionResult Detail(int? id)
         {
             if (id == null)

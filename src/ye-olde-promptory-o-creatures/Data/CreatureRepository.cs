@@ -38,6 +38,11 @@ namespace ye_olde_promptory_o_creatures.Data
             }
         };
 
+        public Creatures[] GetCreatures()
+        {
+            return _creatures;
+        } 
+
         public Creatures GetCreature(int id)
         {
             Creatures creatures = null;
