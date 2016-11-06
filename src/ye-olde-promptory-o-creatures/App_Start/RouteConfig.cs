@@ -16,7 +16,7 @@ namespace ye_olde_promptory_o_creatures
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Creatures", action = "Index", id = UrlParameter.Optional }
             );
         }
     }
