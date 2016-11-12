@@ -1,0 +1,21 @@
+﻿@model ye_olde_promptory_o_creatures.Models.Conference[]
+
+@{
+    ViewBag.Title = "Add";
+}
+<div class="container-fluid">
+    <h2>Add</h2>
+
+    <h3>Want to add a conference?</h3>
+    <div class="form-group">
+        <label for="Name" class="">Name: </label>
+        <input type="text" id="Name" name="Name" value="@ViewBag.Name" />
+    </div>
+    <div class="form-group">
+        <label for="Date" class="">Date: </label>
+        <input type="text" id="Date" name="Date" value="@ViewBag.Date" />
+    </div>
+    <button type="submit" class="btn btn-success">Save</button>
+    <a href="@Url.Action("Index")" class="btn btn-danger">Cancel</a>
+
+</div>

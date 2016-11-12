@@ -117,10 +117,16 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CreaturesController.cs" />
+    <Compile Include="Data\ConferenceRepository.cs" />
     <Compile Include="Data\CreatureRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611072313082_Birthday.cs" />
+    <Compile Include="Migrations\201611072313082_Birthday.Designer.cs">
+      <DependentUpon>201611072313082_Birthday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Conferences.cs" />
     <Compile Include="Models\Creatures.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -138,6 +144,7 @@
     <Content Include="Views\Creatures\RegistrationForm.cshtml" />
     <Content Include="Views\Creatures\Index.cshtml" />
     <Content Include="Views\Creatures\Upcoming.cshtml" />
+    <Content Include="Views\Creatures\Add.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -147,6 +154,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201611072313082_Birthday.resx">
+      <DependentUpon>201611072313082_Birthday.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

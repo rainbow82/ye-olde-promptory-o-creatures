@@ -13,10 +13,12 @@ namespace ye_olde_promptory_o_creatures.Controllers
     public class CreaturesController : Controller
     {
         private CreatureRepository _creatureRepository = null;
+        private ConferenceRepository _conferenceRepository = null;
 
         public CreaturesController()
         {
             _creatureRepository = new CreatureRepository();
+            _conferenceRepository = new ConferenceRepository();
         }
 
         //display home page
@@ -42,14 +44,37 @@ namespace ye_olde_promptory_o_creatures.Controllers
 
         public ActionResult RegistrationForm()
         {
-            var creatures = _creatureRepository.GetCreatures();
-            return View(creatures);
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult RegistrationForm(string firstName, string lastName, string email)
+        {
+            ViewBag.FirstName = firstName;
+            ViewBag.LastName = lastName;
+            ViewBag.Email = email;
+            return View();
         }
 
         public ActionResult Upcoming()
         {
-            var creatures = _creatureRepository.GetCreatures();
-            return View(creatures);
+            var conferences = _conferenceRepository.GetConferences();
+            return View(conferences);
+        }
+
+        public ActionResult Add()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Add(DateTime? date, Conference name)
+        {
+            ViewBag.Name = ModelState["Name"].Value.AttemptedValue;
+            ViewBag.Date = ModelState["Date"].Value.AttemptedValue;
+            return View();
         }
     }
+
+   
 }

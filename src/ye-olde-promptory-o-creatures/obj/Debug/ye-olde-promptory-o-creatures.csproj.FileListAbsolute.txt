@@ -31,3 +31,9 @@ C:\Users\bbeac_000\Source\Repos\ye-olde-promptory-o-creatures\src\ye-olde-prompt
 C:\Users\bbeac_000\Source\Repos\ye-olde-promptory-o-creatures\src\ye-olde-promptory-o-creatures\obj\Debug\ye-olde-promptory-o-creatures.csprojResolveAssemblyReference.cache
 C:\Users\bbeac_000\Source\Repos\ye-olde-promptory-o-creatures\src\ye-olde-promptory-o-creatures\obj\Debug\ye-olde-promptory-o-creatures.dll
 C:\Users\bbeac_000\Source\Repos\ye-olde-promptory-o-creatures\src\ye-olde-promptory-o-creatures\obj\Debug\ye-olde-promptory-o-creatures.pdb
+C:\Users\bbeac_000\Source\Repos\ye-olde-promptory-o-creatures\src\ye-olde-promptory-o-creatures\bin\EntityFramework.dll
+C:\Users\bbeac_000\Source\Repos\ye-olde-promptory-o-creatures\src\ye-olde-promptory-o-creatures\bin\EntityFramework.SqlServer.dll
+C:\Users\bbeac_000\Source\Repos\ye-olde-promptory-o-creatures\src\ye-olde-promptory-o-creatures\bin\EntityFramework.xml
+C:\Users\bbeac_000\Source\Repos\ye-olde-promptory-o-creatures\src\ye-olde-promptory-o-creatures\bin\EntityFramework.SqlServer.xml
+C:\Users\bbeac_000\Source\Repos\ye-olde-promptory-o-creatures\src\ye-olde-promptory-o-creatures\obj\Debug\ye_olde_promptory_o_creatures.Migrations.Birthday.resources
+C:\Users\bbeac_000\Source\Repos\ye-olde-promptory-o-creatures\src\ye-olde-promptory-o-creatures\obj\Debug\ye-olde-promptory-o-creatures.csproj.GenerateResource.Cache

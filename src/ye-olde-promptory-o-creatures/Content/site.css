@@ -58,3 +58,24 @@ textarea {
 .jumbotron .conf-address {
     color: lightgray;
 }
+
+#upcoming {
+   background-color: mediumpurple; 
+}
+
+#upcoming h2 {
+    margin-left: 2%;
+}
+
+h4 {
+    font-family:'UnifrakturCook';
+}
+
+.btn-add {
+    background-color:mediumpurple;
+}
+
+.btn-add a{
+   color:white;
+}
+

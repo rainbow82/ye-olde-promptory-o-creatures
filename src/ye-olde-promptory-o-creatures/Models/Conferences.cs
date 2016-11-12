@@ -9,40 +9,38 @@ using ye_olde_promptory_o_creatures.Models;
 
 namespace ye_olde_promptory_o_creatures.Models
 {
-    public class Conferences
+    public class Conference
     {
         public int ConferenceId { get; set; }
-        public string ConferneceName { get; set; }
+        public string ConferenceName { get; set; }
         public DateTime ConferenceDate { get; set; }
     }
 
-    public class ConferneceContext : DbContext
+    public class ConferenceContext : DbContext
     {
         public DbSet<Conference> Conferences { get; set; }
 
-        public ConferneceContext()
+        public ConferenceContext()
         {
-            Database.SetInitializer<ConferneceContext>(
+            Database.SetInitializer<ConferenceContext>(
                 new MyInitializer()
                 );
         }
     }
 
-    public class MyInitializer : DropCreateDatabaseIfModelChanges<ConferenceContext>
+    public class MyInitializer : DropCreateDatabaseAlways<ConferenceContext>
     {
         protected override void Seed(ConferenceContext context)
         {
             base.Seed(context);
             context.Conferences.Add(new Conference()
             {
-                Name = "Unicorn Con",
-                Date = 10/25/16
+                ConferenceName = "Unicorn Con",
+                ConferenceDate = new DateTime(2016,04,01),
             });
             context.SaveChanges();
         }
     }
 
-    class Conference
-    {
-    }
+   
 }
