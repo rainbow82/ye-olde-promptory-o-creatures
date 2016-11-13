@@ -15,6 +15,8 @@ namespace ye_olde_promptory_o_creatures.Controllers
         private CreatureRepository _creatureRepository = null;
         private ConferenceRepository _conferenceRepository = null;
 
+        public DateTime Date { get; private set; }
+
         public CreaturesController()
         {
             _creatureRepository = new CreatureRepository();
@@ -64,15 +66,23 @@ namespace ye_olde_promptory_o_creatures.Controllers
 
         public ActionResult Add()
         {
-            return View();
+            var conference = new Conference();
+            {
+                Date = DateTime.Today;
+            };
+            return View(conference);
         }
 
         [HttpPost]
-        public ActionResult Add(DateTime? date, Conference name)
+        public ActionResult Add(Conference conference)
         {
-            ViewBag.Name = ModelState["Name"].Value.AttemptedValue;
-            ViewBag.Date = ModelState["Date"].Value.AttemptedValue;
-            return View();
+            if (ModelState.IsValid)
+            {
+                _conferenceRepository.AddConference(conference);
+
+                return RedirectToAction("Index");
+            }
+            return View(conference);
         }
     }
 

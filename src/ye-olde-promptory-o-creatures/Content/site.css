@@ -79,3 +79,11 @@ h4 {
    color:white;
 }
 
+.form-control {
+    background-color:burlywood;
+}
+
+.control-label {
+    background-color:aqua;
+}
+

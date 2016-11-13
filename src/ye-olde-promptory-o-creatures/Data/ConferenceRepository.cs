@@ -51,6 +51,24 @@ namespace ye_olde_promptory_o_creatures.Data
             return c;
         }
 
-   
+        public void AddConference(Conference conference)
+        {
+            // Get the next available entry ID.
+            //int nextAvailableEntryId = Data.ConferenceRepository + 1;
+
+            //conference.ConferenceId = nextAvailableEntryId;
+
+            Data.ConferenceRepository.Add(conference);
+        }
+
+        private static void Add(Conference conference)
+        {
+            throw new NotImplementedException();
+        }
+
+        private static int Max(Func<object, object> p)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
