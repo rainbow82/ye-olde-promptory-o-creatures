@@ -127,7 +127,7 @@
       <DependentUpon>201611072313082_Birthday.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Conference.cs" />
+    <Compile Include="Models\Conferences.cs" />
     <Compile Include="Models\Creatures.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

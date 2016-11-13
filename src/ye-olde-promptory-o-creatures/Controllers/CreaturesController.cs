@@ -66,7 +66,7 @@ namespace ye_olde_promptory_o_creatures.Controllers
 
         public ActionResult Add()
         {
-            var conference = new Conference();
+            var conference = new Conferences();
             {
                 Date = DateTime.Today;
             };
@@ -74,7 +74,7 @@ namespace ye_olde_promptory_o_creatures.Controllers
         }
 
         [HttpPost]
-        public ActionResult Add(Conference conference)
+        public ActionResult Add(Conferences conference)
         {
             if (ModelState.IsValid)
             {

@@ -10,8 +10,20 @@
 }
 
 .navbar-inverse {
-    background-color: sandybrown; 
+    background-color: #005A78; 
 }
+
+.navbar-inverse .navbar-brand {
+    color: #ED0EAA;
+}
+.navbar-brand {
+    font-family:'UnifrakturCook';
+}
+
+.btn-success {
+    margin-top: 1em;
+}
+
 
 /* Set width on the form input elements since they're 100% wide by default */
 input,
@@ -60,7 +72,10 @@ textarea {
 }
 
 #upcoming {
-   background-color: mediumpurple; 
+   background-color: #C43206;
+   color: white;
+   box-shadow: 10px 10px 5px #888888; 
+   //height: 7em;
 }
 
 #upcoming h2 {

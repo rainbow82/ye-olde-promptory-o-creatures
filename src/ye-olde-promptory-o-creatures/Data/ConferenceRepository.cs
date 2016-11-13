@@ -9,35 +9,35 @@ namespace ye_olde_promptory_o_creatures.Data
 {
     public class ConferenceRepository
     {
-        private static Conference[] _conferences = new Conference[]
+        private static Conferences[] _conferences = new Conferences[]
         {
-            new Conference()
+            new Conferences()
             {
                 ConferenceName = "Dragon Con",
                 ConferenceDate = new DateTime(2016, 10, 31)
             },
 
-            new Conference()
+            new Conferences()
             {
                 ConferenceName = "BigFoot Con",
                 ConferenceDate = new DateTime(2016, 10, 31)
             },
 
-            new Conference()
+            new Conferences()
             {
                 ConferenceName = "Fairy Con",
                 ConferenceDate = new DateTime(2016, 10, 31)
             },
         };
 
-        public Conference[] GetConferences()
+        public Conferences[] GetConferences()
         {
             return _conferences;
         }
 
-        public Conference GetConference(int id)
+        public Conferences GetConference(int id)
         {
-            Conference c = null;
+            Conferences c = null;
 
             foreach (var conference in _conferences)
             {
@@ -51,17 +51,17 @@ namespace ye_olde_promptory_o_creatures.Data
             return c;
         }
 
-        public void AddConference(Conference conference)
+        public void AddConference(Conferences conference)
         {
             // Get the next available entry ID.
             //int nextAvailableEntryId = Data.ConferenceRepository + 1;
 
             //conference.ConferenceId = nextAvailableEntryId;
 
-            Data.ConferenceRepository.Add(conference);
+            Add(conference);
         }
 
-        private static void Add(Conference conference)
+        private static void Add(Conferences conference)
         {
             throw new NotImplementedException();
         }
