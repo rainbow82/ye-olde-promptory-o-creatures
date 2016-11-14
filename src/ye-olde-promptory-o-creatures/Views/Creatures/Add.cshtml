@@ -1,4 +1,4 @@
-﻿@model ye_olde_promptory_o_creatures.Models.Conferences[]
+﻿@model ye_olde_promptory_o_creatures.Models.Conferences
 
 
 @{
@@ -13,11 +13,11 @@
         <div class="form-group">
             <!--LabelFor m=>m.ConferenceName-->
             @Html.LabelFor(m=> m.ConferenceName, new { @class="control-label"})
-            @Html.TextBox(m => m.ConferenceName, null, new { @class="form-control"})
+            @Html.TextBoxFor(m => m.ConferenceName, null, new { @class="form-control"})
        </div>
         <div class="form-group">
             @Html.LabelFor(m => m.ConferenceDate, new { @class = "control-label" })
-            @Html.TextBoxFor(m => m.ConferenceDate, "{0:d}", null, new { @class = "form-control" })
+            @Html.TextBoxFor(m => m.ConferenceDate, "{0:d}", new { @class = "form-control" })
         </div>
         <button type="submit" class="btn btn-success">Save</button>
         <a href="@Url.Action("Index")" class="btn btn-danger">Cancel</a>

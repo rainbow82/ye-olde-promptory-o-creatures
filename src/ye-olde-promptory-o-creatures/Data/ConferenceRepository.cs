@@ -54,11 +54,20 @@ namespace ye_olde_promptory_o_creatures.Data
         public void AddConference(Conferences conference)
         {
             // Get the next available entry ID.
-            //int nextAvailableEntryId = Data.ConferenceRepository + 1;
+            int nextAvailableEntryId = _conferences.Max(x => x.ConferenceId)+1;
 
-            //conference.ConferenceId = nextAvailableEntryId;
+            conference.ConferenceId = nextAvailableEntryId;
 
-            Add(conference);
+            var conferences2 = new Conferences[_conferences.Length + 1];
+            for (int i=0; i<_conferences.Length; i++)
+            {
+                conferences2[i] = _conferences[i];
+            }
+            conferences2[_conferences.Length] = conference;
+            _conferences = conferences2; 
+
+
+            // Add(conference);
         }
 
         private static void Add(Conferences conference)
