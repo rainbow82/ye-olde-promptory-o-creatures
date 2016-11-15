@@ -19,8 +19,17 @@
             @Html.LabelFor(m => m.ConferenceDate, new { @class = "control-label" })
             @Html.TextBoxFor(m => m.ConferenceDate, "{0:d}", new { @class = "form-control" })
         </div>
-        <button type="submit" class="btn btn-success">Save</button>
-        <a href="@Url.Action("Index")" class="btn btn-danger">Cancel</a>
+        <div class="row">
+            <div class="col-md-2">
+              <button type="submit" class="btn btn-success">Save</button>            
+            </div>
+            <div class="col-md-2 col-md-pull-1">
+                <a href="@Url.Action("Index")" class="btn btn-danger">Cancel</a>
+            </div>
+        </div>
+
+        
+        
 }
   
 </div>

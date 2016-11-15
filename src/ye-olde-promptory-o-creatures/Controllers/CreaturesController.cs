@@ -80,7 +80,7 @@ namespace ye_olde_promptory_o_creatures.Controllers
             {
                 _conferenceRepository.AddConference(conference);
 
-                return RedirectToAction("Index");
+                return RedirectToAction("Upcoming");
             }
             return View(conference);
         }
